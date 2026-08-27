@@ -6,9 +6,12 @@
     <title>A-Frame Tour</title>
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
     <!-- Waiting for update to support stereo images / A-frame Sky -->
-    <script src="https://cdn.rawgit.com/oscarmarinmiro/aframe-stereo-component/master/dist/aframe-stereo-component.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-    
+    <script
+        src="https://cdn.rawgit.com/oscarmarinmiro/aframe-stereo-component/master/dist/aframe-stereo-component.min.js">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
     <script src="jquery.csv.js"></script>
     <script src="data.js"></script>
     <script src="script.js"></script>
@@ -17,47 +20,52 @@
 <body>
     <a-scene antialias="true">
 
+        <a-entity light="type: ambient; color: #FFF"></a-entity>
 
-       
-               
+
 
         <a-entity id="cam" camera look-controls postition="0 0 0">
 
-             
-            
-
-            <a-entity id="smartText" text="color: red" geometry="primitive: plane; width: .4; height:.04" material="color: #ccc" position="0 -0.1 -1" scale="0 0 0" rotation="0 0 0"  animation="dur:300;property:scale;from:1 1 1;to:0 0 0;startEvents:textHide;" animation__2="dur:300;property:scale;from:0 0 0;to:1 1 1;startEvents:textShow;">
-                
-                
-              
-                <a-entity id="textHolder"></a-entity>
-              
-                <a-animation begin="textHide" easing="ease-in" dur="400" attribute="scale" fill="forwards" to="0 0 0"></a-animation>
-                <a-animation begin="textShow" easing="ease-in" dur="400" attribute="scale" fill="forwards" from="0 0 0" to="1 1 1"></a-animation>
-           
+            <a-entity id="hudText" text="color: red" geometry="primitive: plane; width: 1.2; height:.08;"
+            material="color: white;" position="20 21 -31" scale="30 30 30" rotation="0 0 0">
+        </a-entity>
+  
+        <a-entity id="hudText2" text="color: red" geometry="primitive: plane; width: .6; height:.08;"
+        material="color: white;" position="20 18 -31" scale="30 30 30" rotation="0 0 0">
+    </a-entity>
+            <a-entity id="slideWindow">
                
             </a-entity>
-         
-            <a-entity id="slideWindow"> 
 
-                <!-- <a-image id='slide' height='10' width="10"  visible="false" position = '1 1 -1'visible='true' src="img/ppt/Stapelia.png"></a-image> -->
+            <a-entity id="smartText" text="color: red" geometry="primitive: plane; width: .6; height:.08;"
+                material="color: white;" position="0 -0.1 -1" scale="0 0 0" rotation="0 0 0"
+                animation="dur:300;property:scale;to:0 0 0;startEvents:textHide;autoplay:false;"
+                animation__2="dur:300;property:scale; to:1 1 1;startEvents:textShow;autoplay:false;">
+
+
+
+
+                <!-- <a-entity id="textHolder"></a-entity> -->
+
+
             </a-entity>
-          
-            <a-entity id="cursor" cursor="fuse: true; fuseTimeout: 1000" position="0 0 -1" geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03" material="color: red; shader: flat">
 
-                <a-animation begin="fusing" easing="ease-in" dur="1000" attribute="scale" fill="none" to="0.1 0.1 0.1"></a-animation>
-                <a-animation begin="click" easing="ease-in" attribute="scale" to="1 1 1"></a-animation>
-              
+
+
+
+            <a-entity id="cursor" cursor="fuse: true; fuseTimeout: 1000" position="0 0 -1"
+                geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03" material="color: red; shader: flat">
+
+
+
 
             </a-entity>
 
         </a-entity>
         <a-entity id="markers"></a-entity>
-        <!-- add src="img/00.JPG" while positioning markers! Inspector background cannot be displayed without static injection -->
+
         <a-sky id="sky1"></a-sky>
-	<!--        <a-sky id="sky2" stereo="eye:right"></a-sky>-->
-        <!-- <a-entity id="leftHand" position="0 2 0" hand-controls="left" grab></a-entity> -->
-        <!-- <a-entity id="rightHand" position="0 2 0" hand-controls="right" grab></a-entity> -->
+
     </a-scene>
 </body>
 

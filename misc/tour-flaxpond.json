@@ -1,0 +1,748 @@
+{   
+    "default": {
+        "firstScene": "lobby",
+        "author": "Mark Lang",
+		"autoLoad": true,
+		"compass": true,
+        "sceneFadeDuration": 1000
+    },
+    
+    "scenes": {
+        "lobby": {
+            "title": "Flax Pond Marine Lab Lobby",
+			"author": "Mark Lang",
+            "hfov": 110,
+            "pitch": -3,
+            "yaw": 0,
+			"type": "multires",
+			"multiRes": {
+				"basePath": "http://www.somassbu.org/photosphere/flaxpond/fp_lobby",
+				"path": "/%l/%s%y_%x",
+				"fallbackPath": "/fallback/%s",
+				"extension": "jpg",
+				"tileResolution": 512,
+				"maxLevel": 4,
+				"cubeResolution": 3584
+			},
+			"autoLoad": "true",
+            "hotSpots": [
+				{
+					"pitch": -14,
+					"yaw": -45,
+					"type": "info",
+					"text": "You Found Wolfie!"
+				},
+                {
+                    "pitch": 7,
+                    "yaw": 61,
+                    "type": "scene",
+                    "text": "Wetlab 1",
+                    "sceneId": "wetlab1"
+                },
+                {
+                    "pitch": 3,
+                    "yaw": 61,
+                    "type": "scene",
+                    "text": "Wetlab 2",
+                    "sceneId": "wetlab2"
+                },
+                {
+                    "pitch": -1,
+                    "yaw": 61,
+                    "type": "scene",
+                    "text": "Shellfish Lab",
+                    "sceneId": "shellfishlab"
+                },
+                {
+                    "pitch": -1,
+                    "yaw": -141,
+                    "type": "scene",
+                    "text": "Greenhouse",
+                    "sceneId": "greenhouse"
+                },
+                {
+                    "pitch": -4,
+                    "yaw": -72,
+                    "type": "scene",
+                    "text": "Classroom",
+                    "sceneId": "classroom"
+                },
+                {
+                    "pitch": 0,
+                    "yaw": -72,
+                    "type": "scene",
+                    "text": "Fish Lab",
+                    "sceneId": "fishlab"
+                },
+				{
+					"pitch": -90,
+					"yaw": 0,
+					"type": "info",
+					"text": "Click the links to visit any part of the lab"
+				},
+                {
+                    "pitch": -80,
+                    "yaw": 0,
+                    "type": "scene",
+                    "text": "Back to the Lobby",
+                    "sceneId": "lobby"
+                },
+                {
+                    "pitch": -80,
+                    "yaw": 30,
+                    "type": "scene",
+                    "text": "Classroom",
+                    "sceneId": "classroom"
+                },
+                {
+                    "pitch": -80,
+                    "yaw": 60,
+                    "type": "scene",
+                    "text": "Greenhouse",
+                    "sceneId": "greenhouse"
+                },
+                {
+                    "pitch": -80,
+                    "yaw": 90,
+                    "type": "scene",
+                    "text": "Fish Lab",
+                    "sceneId": "fishlab"
+                },
+                {
+                    "pitch": -80,
+                    "yaw": 120,
+                    "type": "scene",
+                    "text": "Wetlab 1",
+                    "sceneId": "wetlab1"
+                },
+                {
+                    "pitch": -80,
+                    "yaw": 150,
+                    "type": "scene",
+                    "text": "Wetlab 2",
+                    "sceneId": "wetlab2"
+                },
+                {
+                    "pitch": -80,
+                    "yaw": 180,
+                    "type": "scene",
+                    "text": "Shellfish Lab",
+                    "sceneId": "shellfishlab"
+                }
+            ]
+        },
+        "classroom": {
+            "title": "Flax Pond Marine Classroom",
+			"author": "Mark Lang",
+            "hfov": 110,
+            "pitch": -3,
+            "yaw": 0,
+			"type": "multires",
+			"multiRes": {
+				"basePath": "http://www.somassbu.org/photosphere/flaxpond/fp_classroom",
+				"path": "/%l/%s%y_%x",
+				"fallbackPath": "/fallback/%s",
+				"extension": "jpg",
+				"tileResolution": 512,
+				"maxLevel": 4,
+				"cubeResolution": 3096
+			},
+			"autoLoad": "true",
+            "hotSpots": [
+				{
+					"pitch": -8,
+					"yaw": 122,
+					"type": "info",
+					"text": "You Found Wolfie!"
+				},
+                {
+					"pitch": -13,
+					"yaw": -160,
+                    "type": "scene",
+                    "text": "Fish Lab",
+                    "sceneId": "fishlab"
+                },
+                {
+					"pitch": -3,
+					"yaw": -162,
+                    "type": "scene",
+                    "text": "Greenhouse",
+                    "sceneId": "greenhouse"
+                },
+                {
+					"pitch": -25,
+					"yaw": -159,
+                    "type": "scene",
+                    "text": "Back to the Lobby",
+                    "sceneId": "lobby"
+                },
+				{
+					"pitch": -90,
+					"yaw": 0,
+					"type": "info",
+					"text": "Click the links to visit any part of the lab"
+				},
+                {
+                    "pitch": -80,
+                    "yaw": 0,
+                    "type": "scene",
+                    "text": "Back to the Lobby",
+                    "sceneId": "lobby"
+                },
+                {
+                    "pitch": -80,
+                    "yaw": 30,
+                    "type": "scene",
+                    "text": "Classroom",
+                    "sceneId": "classroom"
+                },
+                {
+                    "pitch": -80,
+                    "yaw": 60,
+                    "type": "scene",
+                    "text": "Greenhouse",
+                    "sceneId": "greenhouse"
+                },
+                {
+                    "pitch": -80,
+                    "yaw": 90,
+                    "type": "scene",
+                    "text": "Fish Lab",
+                    "sceneId": "fishlab"
+                },
+                {
+                    "pitch": -80,
+                    "yaw": 120,
+                    "type": "scene",
+                    "text": "Wetlab 1",
+                    "sceneId": "wetlab1"
+                },
+                {
+                    "pitch": -80,
+                    "yaw": 150,
+                    "type": "scene",
+                    "text": "Wetlab 2",
+                    "sceneId": "wetlab2"
+                },
+                {
+                    "pitch": -80,
+                    "yaw": 180,
+                    "type": "scene",
+                    "text": "Shellfish Lab",
+                    "sceneId": "shellfishlab"
+                }
+            ]
+        },
+        "fishlab": {
+            "title": "Flax Pond Marine Fish Lab",
+			"author": "Mark Lang",
+            "hfov": 110,
+            "pitch": -3,
+            "yaw": 0,
+			"type": "multires",
+			"multiRes": {
+				"basePath": "http://www.somassbu.org/photosphere/flaxpond/fp_fishlab",
+				"path": "/%l/%s%y_%x",
+				"fallbackPath": "/fallback/%s",
+				"extension": "jpg",
+				"tileResolution": 512,
+				"maxLevel": 4,
+				"cubeResolution": 3096
+			},
+			"autoLoad": "true",
+            "hotSpots": [
+				{
+					"pitch": -3,
+					"yaw": -158,
+					"type": "info",
+					"text": "You Found Wolfie!"
+				},
+                {
+                    "pitch": 2,
+                    "yaw": 172,
+                    "type": "scene",
+                    "text": "Classroom",
+                    "sceneId": "classroom"
+                },
+                {
+                    "pitch": -4,
+                    "yaw": 172,
+                    "type": "scene",
+                    "text": "Back to the Lobby",
+                    "sceneId": "lobby"
+                },
+                {
+                    "pitch": 0,
+                    "yaw": 66,
+                    "type": "scene",
+                    "text": "Greenhouse",
+                    "sceneId": "greenhouse"
+                },
+				{
+					"pitch": -90,
+					"yaw": 0,
+					"type": "info",
+					"text": "Click the links to visit any part of the lab"
+				},
+                {
+                    "pitch": -80,
+                    "yaw": 0,
+                    "type": "scene",
+                    "text": "Back to the Lobby",
+                    "sceneId": "lobby"
+                },
+                {
+                    "pitch": -80,
+                    "yaw": 30,
+                    "type": "scene",
+                    "text": "Classroom",
+                    "sceneId": "classroom"
+                },
+                {
+                    "pitch": -80,
+                    "yaw": 60,
+                    "type": "scene",
+                    "text": "Greenhouse",
+                    "sceneId": "greenhouse"
+                },
+                {
+                    "pitch": -80,
+                    "yaw": 90,
+                    "type": "scene",
+                    "text": "Fish Lab",
+                    "sceneId": "fishlab"
+                },
+                {
+                    "pitch": -80,
+                    "yaw": 120,
+                    "type": "scene",
+                    "text": "Wetlab 1",
+                    "sceneId": "wetlab1"
+                },
+                {
+                    "pitch": -80,
+                    "yaw": 150,
+                    "type": "scene",
+                    "text": "Wetlab 2",
+                    "sceneId": "wetlab2"
+                },
+                {
+                    "pitch": -80,
+                    "yaw": 180,
+                    "type": "scene",
+                    "text": "Shellfish Lab",
+                    "sceneId": "shellfishlab"
+                }
+            ]
+        },
+        "greenhouse": {
+            "title": "Flax Pond Marine Greenhouse",
+			"author": "Mark Lang",
+            "hfov": 110,
+            "pitch": -3,
+            "yaw": 0,
+			"type": "multires",
+			"multiRes": {
+				"basePath": "http://www.somassbu.org/photosphere/flaxpond/fp_greenhouse",
+				"path": "/%l/%s%y_%x",
+				"fallbackPath": "/fallback/%s",
+				"extension": "jpg",
+				"tileResolution": 512,
+				"maxLevel": 4,
+				"cubeResolution": 3096
+			},
+			"autoLoad": "true",
+            "hotSpots": [
+				{
+					"pitch": -10,
+					"yaw": 67,
+					"type": "info",
+					"text": "You Found Wolfie!"
+				},
+                {
+                    "pitch": -2,
+                    "yaw": 42,
+                    "type": "scene",
+                    "text": "Back to the Lobby",
+                    "sceneId": "lobby"
+                },
+                {
+                    "pitch": 1,
+                    "yaw": -113,
+                    "type": "scene",
+                    "text": "Fish Lab",
+                    "sceneId": "fishlab"
+                },
+				{
+					"pitch": -90,
+					"yaw": 0,
+					"type": "info",
+					"text": "Click the links to visit any part of the lab"
+				},
+                {
+                    "pitch": -80,
+                    "yaw": 0,
+                    "type": "scene",
+                    "text": "Back to the Lobby",
+                    "sceneId": "lobby"
+                },
+                {
+                    "pitch": -80,
+                    "yaw": 30,
+                    "type": "scene",
+                    "text": "Classroom",
+                    "sceneId": "classroom"
+                },
+                {
+                    "pitch": -80,
+                    "yaw": 60,
+                    "type": "scene",
+                    "text": "Greenhouse",
+                    "sceneId": "greenhouse"
+                },
+                {
+                    "pitch": -80,
+                    "yaw": 90,
+                    "type": "scene",
+                    "text": "Fish Lab",
+                    "sceneId": "fishlab"
+                },
+                {
+                    "pitch": -80,
+                    "yaw": 120,
+                    "type": "scene",
+                    "text": "Wetlab 1",
+                    "sceneId": "wetlab1"
+                },
+                {
+                    "pitch": -80,
+                    "yaw": 150,
+                    "type": "scene",
+                    "text": "Wetlab 2",
+                    "sceneId": "wetlab2"
+                },
+                {
+                    "pitch": -80,
+                    "yaw": 180,
+                    "type": "scene",
+                    "text": "Shellfish Lab",
+                    "sceneId": "shellfishlab"
+                }
+            ]
+        },
+        "wetlab1": {
+            "title": "Flax Pond Marine Wetlab",
+			"author": "Mark Lang",
+            "hfov": 110,
+            "pitch": -3,
+            "yaw": 0,
+			"type": "multires",
+			"multiRes": {
+				"basePath": "http://www.somassbu.org/photosphere/flaxpond/fp_wetlab1",
+				"path": "/%l/%s%y_%x",
+				"fallbackPath": "/fallback/%s",
+				"extension": "jpg",
+				"tileResolution": 512,
+				"maxLevel": 4,
+				"cubeResolution": 3096
+			},
+			"autoLoad": "true",
+            "hotSpots": [
+				{
+					"pitch": -12,
+					"yaw": -16,
+					"type": "info",
+					"text": "You Found Wolfie!"
+				},
+                {
+                    "pitch": 0,
+                    "yaw": 75,
+                    "type": "scene",
+                    "text": "Back to the Lobby",
+                    "sceneId": "lobby"
+                },
+                {
+                    "pitch": -4,
+                    "yaw": 79,
+                    "type": "scene",
+                    "text": "Shellfish Lab",
+                    "sceneId": "shellfishlab"
+                },
+                {
+                    "pitch": -2,
+                    "yaw": 139,
+                    "type": "scene",
+                    "text": "Wetlab 2",
+                    "sceneId": "wetlab2"
+                },
+				{
+					"pitch": -90,
+					"yaw": 0,
+					"type": "info",
+					"text": "Click the links to visit any part of the lab"
+				},
+                {
+                    "pitch": -80,
+                    "yaw": 0,
+                    "type": "scene",
+                    "text": "Back to the Lobby",
+                    "sceneId": "lobby"
+                },
+                {
+                    "pitch": -80,
+                    "yaw": 30,
+                    "type": "scene",
+                    "text": "Classroom",
+                    "sceneId": "classroom"
+                },
+                {
+                    "pitch": -80,
+                    "yaw": 60,
+                    "type": "scene",
+                    "text": "Greenhouse",
+                    "sceneId": "greenhouse"
+                },
+                {
+                    "pitch": -80,
+                    "yaw": 90,
+                    "type": "scene",
+                    "text": "Fish Lab",
+                    "sceneId": "fishlab"
+                },
+                {
+                    "pitch": -80,
+                    "yaw": 120,
+                    "type": "scene",
+                    "text": "Wetlab 1",
+                    "sceneId": "wetlab1"
+                },
+                {
+                    "pitch": -80,
+                    "yaw": 150,
+                    "type": "scene",
+                    "text": "Wetlab 2",
+                    "sceneId": "wetlab2"
+                },
+                {
+                    "pitch": -80,
+                    "yaw": 180,
+                    "type": "scene",
+                    "text": "Shellfish Lab",
+                    "sceneId": "shellfishlab"
+                }
+            ]
+        },
+        "wetlab2": {
+            "title": "Flax Pond Marine Wetlab",
+			"author": "Mark Lang",
+            "hfov": 110,
+            "pitch": -3,
+            "yaw": 0,
+			"type": "multires",
+			"multiRes": {
+				"basePath": "http://www.somassbu.org/photosphere/flaxpond/fp_wetlab2",
+				"path": "/%l/%s%y_%x",
+				"fallbackPath": "/fallback/%s",
+				"extension": "jpg",
+				"tileResolution": 512,
+				"maxLevel": 4,
+				"cubeResolution": 3096
+			},
+			"autoLoad": "true",
+            "hotSpots": [
+				{
+					"pitch": -12,
+					"yaw": -174,
+					"type": "info",
+					"text": "You Found Wolfie!"
+				},
+				{
+					"pitch": 5,
+					"yaw": -88.5,
+					"type": "info",
+					"text": "About the Marine Science Center",
+					"URL": "https://www.youtube.com/watch?v=xIv7KWwDRgM"
+				},
+                {
+                    "pitch": -2,
+                    "yaw": 158,
+                    "type": "scene",
+                    "text": "Back to the Lobby",
+                    "sceneId": "lobby"
+                },
+                {
+                    "pitch": 2,
+                    "yaw": 158,
+                    "type": "scene",
+                    "text": "Shellfish Lab",
+                    "sceneId": "shellfishlab"
+                },
+                {
+                    "pitch": -5,
+                    "yaw": 138,
+                    "type": "scene",
+                    "text": "Wetlab 1",
+                    "sceneId": "wetlab1"
+                },
+				{
+					"pitch": -90,
+					"yaw": 0,
+					"type": "info",
+					"text": "Click the links to visit any part of the lab"
+				},
+                {
+                    "pitch": -80,
+                    "yaw": 0,
+                    "type": "scene",
+                    "text": "Back to the Lobby",
+                    "sceneId": "lobby"
+                },
+                {
+                    "pitch": -80,
+                    "yaw": 30,
+                    "type": "scene",
+                    "text": "Classroom",
+                    "sceneId": "classroom"
+                },
+                {
+                    "pitch": -80,
+                    "yaw": 60,
+                    "type": "scene",
+                    "text": "Greenhouse",
+                    "sceneId": "greenhouse"
+                },
+                {
+                    "pitch": -80,
+                    "yaw": 90,
+                    "type": "scene",
+                    "text": "Fish Lab",
+                    "sceneId": "fishlab"
+                },
+                {
+                    "pitch": -80,
+                    "yaw": 120,
+                    "type": "scene",
+                    "text": "Wetlab 1",
+                    "sceneId": "wetlab1"
+                },
+                {
+                    "pitch": -80,
+                    "yaw": 150,
+                    "type": "scene",
+                    "text": "Wetlab 2",
+                    "sceneId": "wetlab2"
+                },
+                {
+                    "pitch": -80,
+                    "yaw": 180,
+                    "type": "scene",
+                    "text": "Shellfish Lab",
+                    "sceneId": "shellfishlab"
+                }
+            ]
+        },
+        "shellfishlab": {
+            "title": "Flax Pond Marine Shellfish Lab",
+			"author": "Mark Lang",
+            "hfov": 110,
+            "pitch": -3,
+            "yaw": 0,
+			"type": "multires",
+			"multiRes": {
+				"basePath": "http://www.somassbu.org/photosphere/flaxpond/fp_shellfishlab",
+				"path": "/%l/%s%y_%x",
+				"fallbackPath": "/fallback/%s",
+				"extension": "jpg",
+				"tileResolution": 512,
+				"maxLevel": 4,
+				"cubeResolution": 3096
+			},
+			"autoLoad": "true",
+            "hotSpots": [
+				{
+					"pitch": -10,
+					"yaw": 74,
+					"type": "info",
+					"text": "You Found Wolfie!"
+				},
+                {
+                    "pitch": -4,
+                    "yaw": -155,
+                    "type": "scene",
+                    "text": "Back to the Lobby",
+                    "sceneId": "lobby"
+                },
+                {
+                    "pitch": 0,
+                    "yaw": -155,
+                    "type": "scene",
+                    "text": "Wetlab 1",
+                    "sceneId": "wetlab1"
+                },
+                {
+                    "pitch": 4,
+                    "yaw": -155,
+                    "type": "scene",
+                    "text": "Wetlab 2",
+                    "sceneId": "wetlab2"
+                },
+				{
+					"pitch": -90,
+					"yaw": 0,
+					"type": "info",
+					"text": "Click the links to visit any part of the lab"
+				},
+                {
+                    "pitch": -80,
+                    "yaw": 0,
+                    "type": "scene",
+                    "text": "Back to the Lobby",
+                    "sceneId": "lobby"
+                },
+                {
+                    "pitch": -80,
+                    "yaw": 30,
+                    "type": "scene",
+                    "text": "Classroom",
+                    "sceneId": "classroom"
+                },
+                {
+                    "pitch": -80,
+                    "yaw": 60,
+                    "type": "scene",
+                    "text": "Greenhouse",
+                    "sceneId": "greenhouse"
+                },
+                {
+                    "pitch": -80,
+                    "yaw": 90,
+                    "type": "scene",
+                    "text": "Fish Lab",
+                    "sceneId": "fishlab"
+                },
+                {
+                    "pitch": -80,
+                    "yaw": 120,
+                    "type": "scene",
+                    "text": "Wetlab 1",
+                    "sceneId": "wetlab1"
+                },
+                {
+                    "pitch": -80,
+                    "yaw": 150,
+                    "type": "scene",
+                    "text": "Wetlab 2",
+                    "sceneId": "wetlab2"
+                },
+                {
+                    "pitch": -80,
+                    "yaw": 180,
+                    "type": "scene",
+                    "text": "Shellfish Lab",
+                    "sceneId": "shellfishlab"
+                }
+            ]
+        }
+
+        }
+    }
