@@ -9,7 +9,7 @@ function getData(gid) {
 
 
 
-  $.get(`https://apps.tlt.stonybrook.edu/gproxy/?id=${id}&gid=${gid}&prePath=${pre}`, function(data) {
+  $.get(`/gproxy/?id=${id}&gid=${gid}&prePath=${pre}`, function(data) {
  var gdata = $.csv.toObjects(data);
   
     promise.resolve(gdata)
